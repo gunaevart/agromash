@@ -19,15 +19,16 @@ $(function() {
 
 		// Закрывам модалку
 		$('#modalHeader, .modal-backdrop').fadeOut(500);
-		$('#modalHeaderStatus').show(1000);
-
-		// Открываеться модалка успешной заявки
-		$('#close, .close').click(function(){
-			$('#modalHeaderStatus').hide(500);
-		});		
+		$('#modalHeaderStatus').show(1000);	
 
 		
 	});
+	// Открываеться модалка успешной заявки
+	$('#close, .close').click(function(){
+		$('#modalHeaderStatus').hide(500);
+		// location.reload(1000);
+
+	});	
 
 
 	// заказать товар
