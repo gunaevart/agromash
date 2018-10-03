@@ -23,7 +23,7 @@
 			<div class="col-md-6 col-ms-12 text-right align-self-center">
 				Телефон: <a href="tel:+79109867353">89109867353</a> <br>
 				Почта: <a href="mailto:89109867353@mail.ru">89109867353@mail.ru</a> <br>
-				<button id="orderPhone">заказать звонок</button>
+				<button  class="orderPhone" data-toggle="modal" data-target="#modalHeader">заказать погрузчик</button>
 			</div>
 		</div>
 	 </div>
@@ -31,13 +31,13 @@
 		<img src="img/menu.png" alt="">
 		<ul class="header__nav">
 			<li><a href="#index">главная</a></li>
-			<li><a href="#index">запчасти</a></li>
-			<li><a href="#index">доставка</a></li>
-			<li><a href="#index">о нас</a></li>
+			<li><a href="#index">навесное оборудование</a></li>
+			<li><a href="#index">доставка и оплата</a></li>
+			<!-- <li><a href="#index">о нас</a></li> -->
 		</ul>
 	</div>
 	<div class="col-md-12 text-center text-uppercase">
-		<h3>погрузчик уневерсальный пку 0.8</h3>
+		<h3>Погрузчик ПКУ-0,8 (КУН) усиленный на трактор МТЗ</h3>
 	</div>
 </div>
 <div class="header__img">
@@ -102,6 +102,136 @@
 			  </div>
 		</div>
 	</div>
+<div class="container">
+	<h3 class="h3 text-center my-4 text-uppercase">навесное оборудование для погрузчика пку 0.8</h3>
+	<div class="row">
+			<div class="col-lg-3 col-md-4 col-6 thumb">
+					<a data-fancybox="gallery" href="img/dop/1.jpg">
+						 <img class="img-fluid" src="img/dop/1.jpg" alt="">
+					</a>
+			  </div>
+			<div class="col-lg-3 col-md-4 col-6 thumb">
+				 <a data-fancybox="gallery" href="img/dop/2.jpg">
+					  <img class="img-fluid" src="img/dop/2.jpg" alt="">
+				 </a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 thumb">
+				 <a data-fancybox="gallery" href="img/dop/3.jpg">
+					  <img class="img-fluid" src="img/dop/3.jpg" alt="">
+				 </a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 thumb">
+				  <a data-fancybox="gallery" href="img/dop/4.jpg">
+						<img class="img-fluid" src="img/dop/4.jpg" alt="">
+				  </a>
+			 </div>
+			 <div class="col-lg-3 col-md-4 col-6 thumb">
+				  <a data-fancybox="gallery" href="img/dop/5.jpg">
+						<img class="img-fluid" src="img/dop/5.jpg" alt="">
+				  </a>
+			 </div>
+			 <div class="col-lg-3 col-md-4 col-6 thumb">
+				  <a data-fancybox="gallery" href="img/dop/6.jpg">
+						<img class="img-fluid" src="img/dop/6.jpg" alt="">
+				  </a>
+			 </div>
+			 <div class="col-lg-3 col-md-4 col-6 thumb">
+					<a data-fancybox="gallery" href="img/dop/7.jpg">
+						 <img class="img-fluid" src="img/dop/7.jpg" alt="">
+					</a>
+			  </div>
+			  <div class="col-lg-3 col-md-4 col-6 thumb">
+					<a data-fancybox="gallery" href="img/dop/8.jpg">
+						 <img class="img-fluid" src="img/dop/8.jpg" alt="">
+					</a>
+			  </div>
+	  </div>
+</div>
+<div class="container mt-5">
+	<div class="col-md-12 text-center">
+			<h3>Для погрузчика ПКУ-0.8 разработанно много навесного оборудования, которое вы можете заказать у нас.</h3>
+	</div>
+</div>
+<div class="section-form-dop container">
+		<div class="col-md-12 form">
+			<div class="form-inline d-flex justify-content-center">
+				<div class="form-group mb-2">
+				  оставить<span>заявку</span>
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+				  <input type="tel" class="form-control" id="inputPhone" placeholder="Ваш телефон">
+				</div>
+				<button  id="btnPhone" class="btn btn-primary mb-2">заказать</button>
+			  </div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <!-- Modal -->
+	 <div class="modal fade" id="modalHeader" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			 <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">оформление заказа</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			 </div>
+			 <div class="modal-body">
+				<div class="form-group">
+					<label for="fio">Фамилия Имя Отчество</label>
+					<input type="text" class="form-control" id="fioModal" placeholder="Ф.И.О">
+				</div>
+				<div class="form-group">
+						<label for="mail">"Электронная почта (если есть)"</label>
+						<input type="text" class="form-control" id="mailModal" placeholder="Ваш (e-mail)">
+					</div>
+				<div class="form-group">
+					<label for="phoneModal">Номер телефона</label>
+					<input type="text" class="form-control" id="phoneModal" placeholder="+7 (999) 999 99 99">
+				</div>
+			 </div>
+			 <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">закрыть</button>
+				<button type="button" class="btn btn-primary" id="getFormOrder">отправить заявку</button>
+			 </div>
+		  </div>
+		</div>
+	 </div>
+<!-- modal ok status -->
+<div class="modal" tabindex="-1" role="dialog" id="modalHeaderStatus">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			 <div class="modal-header">
+				<h5 class="modal-title"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			 </div>
+			 <div class="modal-body text-uppercase text-center">
+				<h3>Ваша заявка успешна получена</h3>
+				в ближайшее время мы с вами свяжемся
+			 </div>
+			 <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">закрыть</button>
+			 </div>
+		  </div>
+		</div>
+	 </div>
 </div>	
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
