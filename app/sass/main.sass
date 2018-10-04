@@ -84,8 +84,7 @@
         border-bottom: 3px solid #fff
         text-decoration: none
         color: #E4B61B
-
-// orderPhone
+  // orderPhone
 .orderPhone
   color: #000
   background: #E4B61B
@@ -95,8 +94,73 @@
   &:hover
     cursor: pointer
     color: #fff
+// dop info tex info
+.section-dominfo
+  position: relative
+  top: 100px
+.section-form-dopinfp
+  position: relative
+  top: 100px
+// 
 
+.description-docs
+  flex: 4
 
+.description-docs ul li
+  margin: 30px 0
+  padding-left: 45px
+  height: 3rem
+  display: flex
+  align-items: center
+
+.description-docs ul li a
+  color: #3172b2
+  text-decoration: none
+
+.description-docs ul li a:hover
+  color: #3172b2
+  text-decoration: none
+
+.description-docs ul li::before
+  content: ''
+  width: 32px
+  height: 46px
+  position: absolute
+  margin-left: -44px
+  margin-top: -3px
+
+.description-docs ul li.doc::before
+  background: url(../images/docs/doc.svg) no-repeat center
+  background-size: contain
+
+.description-docs ul li.jpg::before
+  background: url(../img/teh/jpg.svg) no-repeat center
+  background-size: contain
+
+.description-docs ul li.pdf::before
+  background: url(../img/teh/pdf.svg) no-repeat center
+  background-size: contain
+// footer
+.footer
+  background: url(../img/foo.jpg) center bottom no-repeat #fff
+  height: 520px
+  &__contact
+    position: relative
+    top: 410px
+    right: 200px
+    a
+      color: red
+      font-weight: 800
+.bgadres
+  background: #fff
+  position: relative
+  top: 300px
+  width: 300px
+  margin: 0 auto
+  right: -390px
+  padding: 20px
+  border-radius: 10px
+  opacity: 0.8
 // galereya
 .thumb
   img
@@ -120,3 +184,95 @@
 
 .thumb 
     padding: 5px
+
+
+
+// media
+
+@media only screen and (max-width: 1024px)
+  .bgadres
+    right: -330px
+@media only screen and (max-width: 770px)
+  .header__menu
+    img
+      display: none
+  ul.header__nav
+    position: relative
+    top: 10px
+    left: -120px
+    a
+      color: #000
+  .media-h3
+    h3
+    font-size: 27px
+    padding-top: 40px
+  .bgadres
+    right: -224px
+  .header__prise
+    font-size: 2em
+    position: relative
+    width: 100%
+    top: -92px
+@media only screen and (max-width: 430px)
+  .bgadres
+    right: 0
+  .header__title
+    font-size: 14px
+  .text-right
+    text-align: center
+  ul.header__nav
+    display: inline-block
+  .header__prise
+    font-size: 20px
+    position: relative
+    width: 100%
+    top: -61px
+  .section-form
+    top: -39px
+@media only screen and (max-width: 376px)
+
+  ul.header__nav
+    font-size: 12px
+  .header__title
+    font-size: 10px
+  .header__prise
+    font-size: 24px
+    position: relative
+    width: 100%
+    top: -4px
+  .form-group
+    margin-bottom: 1rem
+    font-size: 27px
+  .section-form
+    top: -10px
+  .text-right
+    font-size: 16px
+    position: relative
+    left: -40px
+  .h3, h3
+    font-size: 1rem
+  .bgadres
+    right: -34px
+@media only screen and (max-width: 322px)
+  ul.header__nav
+    font-size: 12px
+  .header__title
+    font-size: 10px
+  .header__prise
+    font-size: 24px
+    position: relative
+    width: 100%
+    top: -4px
+  .form-group
+    margin-bottom: 1rem
+    font-size: 27px
+  .section-form
+    top: -10px
+  .text-right
+    font-size: 16px
+    position: relative
+    left: -40px
+  .h3, h3
+    font-size: 1rem
+  .bgadres
+    right: -34px
