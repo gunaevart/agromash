@@ -21,7 +21,7 @@ $(function() {
 			// открываем POST
 
 			$.ajax({
-				url: '../app/php/send.php', // куда посылаем запрос
+				url: '/php/send.php', // куда посылаем запрос
 				type: "POST",
 				data: {fioModal:fioModal,
 					   mailModal:mailModal,
@@ -29,12 +29,12 @@ $(function() {
 					   setDate:setDate
 					  },
 				success: function(data){ // что делаем в случае успеха, в data лежит ответ от сервера
-				  alert(data); // выводим ответ
-				  if(data == 'okey'){
-				   alert("Hello =)");
-				  }else{
-				   alert("Неправильный логин или пароль =(");
-				  }
+				 // alert(data); // выводим ответ
+				//   if(data == 'okey'){
+				//    alert("Hello =)");
+				//   }else{
+				//    alert("Неправильный логин или пароль =(");
+				//   }
 				}
 			  });
 
@@ -45,24 +45,53 @@ $(function() {
 			$('#modalHeaderStatus').hide(500);
 			// location.reload(1000);
 			});
-
-
 			
-
 		}
 		else{
 			alert('вы нечего не ввели!');
 		}
 		
-		
-	});
+	});// конец функцииотправки в шапке сайта
 	
 
-	// заказать товар
+	// заказать товар 
 
-	$('#btnPhone').click(function(){
-		console.log('заказать товар');
-	});
-	// $('#inputPhone').
+	$('#phone1').click(function(){
+		let inputPhone = $('.inputPhone').val();
+		if(inputPhone != ''){
+			$.ajax({
+				url: '/php/fone.php', // куда посылаем запрос
+				type: "POST",
+				data: {inputPhone:inputPhone},
+				success: function(data){ // что делаем в случае успеха, в data лежит ответ от сервера
+					$('#modalHeaderStatus').show(1000);
+					$('#close, .close').click(function(){
+					$('#modalHeaderStatus').hide(500);
+					$('.inputPhone').val('');
+					});
+				  }
+		
+			  });
+			}
+		
+		});
 
+	$('#phone2').click(function(){
+		let inputPhone2 = $('.inputPhone2').val();
+		if(inputPhone2 != ''){
+			$.ajax({
+				url: '/php/fone.php', // куда посылаем запрос
+				type: "POST",
+				data: {inputPhone2:inputPhone2},
+				success: function(data){ // что делаем в случае успеха, в data лежит ответ от сервера
+					$('#modalHeaderStatus').show(1000);
+					$('#close, .close').click(function(){
+					$('#modalHeaderStatus').hide(500);
+					$('.inputPhone2').val('');
+					});
+				  }
+				
+			  });
+			}
+	 });
 });
