@@ -29,7 +29,7 @@ $(function() {
 					   setDate:setDate
 					  },
 				success: function(data){ // что делаем в случае успеха, в data лежит ответ от сервера
-				 // alert(data); // выводим ответ
+				  //alert(data); // выводим ответ
 				//   if(data == 'okey'){
 				//    alert("Hello =)");
 				//   }else{
